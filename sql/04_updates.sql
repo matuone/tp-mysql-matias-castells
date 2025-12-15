@@ -9,3 +9,9 @@ WHERE id = 1;
 UPDATE veterinarios
 SET especialidad = 'Traumatologia'
 WHERE matricula = 'MAT-002';
+
+/* Ejercicio 7 - Update descripcion historial clinico */
+
+UPDATE historial_clinico
+SET descripcion = 'Control general anual con analisis de rutina'
+WHERE id = 1;
