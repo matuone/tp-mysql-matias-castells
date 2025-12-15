@@ -16,3 +16,9 @@ INSERT INTO mascotas (nombre, especie, fecha_nacimiento, id_dueno) VALUES
 ('La Tombi', 'Gato', '2020-03-10', 2),
 ('Figal', 'Perro', '2017-11-01', 3);
 
+/* Ejercicio 6 - Insertando tabla historial_clinico */
+
+INSERT INTO historial_clinico (id_mascotas, id_veterinario, descripcion) VALUES
+(1, 1, 'Control general anual'),
+(2, 2, 'Cirugia programada'),
+(3, 1, 'Vacunacion antirrabica');
