@@ -30,3 +30,16 @@ CREATE TABLE mascotas (
   matricula VARCHAR(20) NOT NULL UNIQUE,
   especialidad VARCHAR(50) NOT NULL
   );
+
+  /* Ejercicio 5 - Creando tabla historial_clinico */
+
+  CREATE TABLE historial_clinico (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_mascota INT NOT NULL,
+    id_veterinario INT NOT NULL,
+    fecha_registro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    descripcion VARCHAR(250) NOT NULL,
+    FOREIGN KEY (id_mascota) REFERENCES mascotas(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_veterinario) REFERENCES veterinarios(id)
+  );
+  
