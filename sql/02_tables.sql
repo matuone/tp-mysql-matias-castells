@@ -20,3 +20,13 @@ CREATE TABLE mascotas (
   id_dueno INT,
   FOREIGN KEY (id_dueno) REFERENCES duenos(id) ON DELETE CASCADE
  );
+
+ /* Ejercicio 4 - Creando tabla veterinarios */
+
+ CREATE TABLE veterinarios (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(50) NOT NULL,
+  apellido VARCHAR(50) NOT NULL,
+  matricula VARCHAR(20) NOT NULL UNIQUE,
+  especialidad VARCHAR(50) NOT NULL
+  );
