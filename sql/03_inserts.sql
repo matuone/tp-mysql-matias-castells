@@ -18,7 +18,7 @@ INSERT INTO mascotas (nombre, especie, fecha_nacimiento, id_dueno) VALUES
 
 /* Ejercicio 6 - Insertando tabla historial_clinico */
 
-INSERT INTO historial_clinico (id_mascotas, id_veterinario, descripcion) VALUES
+INSERT INTO historial_clinico (id_mascota, id_veterinario, descripcion) VALUES
 (1, 1, 'Control general anual'),
 (2, 2, 'Cirugia programada'),
 (3, 1, 'Vacunacion antirrabica');
