@@ -1,0 +1,126 @@
+# 🐾 Trabajo Práctico MySQL – Veterinaria *Patitas Felices*
+
+Proyecto realizado como **trabajo práctico de MySQL** para la materia de **Backend / Bases de Datos**.
+
+El objetivo del TP es **diseñar, crear y consultar una base de datos relacional** utilizando SQL, aplicando:
+
+* Creación de tablas
+* Claves primarias y foráneas
+* Relaciones entre entidades
+* Consultas con `SELECT`, `JOIN`, `WHERE`, etc.
+
+---
+
+## 📂 Estructura del proyecto
+
+```bash
+.
+├── 01_database.sql        # Creación de la base de datos
+├── 02_tables.sql          # Creación de TODAS las tablas (en un único script)
+├── 03_inserts.sql         # Inserción de datos de prueba
+├── 04_queries.sql         # Consultas solicitadas en el TP
+└── README.md
+```
+
+> ⚠️ **Importante:** todas las tablas fueron creadas dentro de un **único script** (`02_tables.sql`), tal como se solicita en la consigna.
+
+---
+
+## 🧠 Modelo de datos
+
+La base de datos representa el funcionamiento de una veterinaria:
+
+* 🐶 **Mascotas**
+* 👤 **Dueños**
+* 🩺 **Veterinarios**
+* 📋 **Historial clínico**
+* 📅 **Turnos**
+
+Las tablas están relacionadas mediante **claves foráneas**, respetando la integridad referencial.
+
+---
+
+## ▶️ Cómo ejecutar los scripts
+
+Los scripts deben ejecutarse **en orden**, desde MySQL Workbench o la terminal.
+
+### Opción 1: MySQL Workbench
+
+1. Abrir **MySQL Workbench**
+2. Conectarse al servidor MySQL
+3. Abrir cada archivo `.sql`
+4. Ejecutarlos en el siguiente orden:
+
+```sql
+01_database.sql
+02_tables.sql
+03_inserts.sql
+04_queries.sql
+```
+
+---
+
+### Opción 2: Terminal (MySQL CLI)
+
+```bash
+mysql -u root -p
+```
+
+Luego:
+
+```sql
+SOURCE ruta/01_database.sql;
+SOURCE ruta/02_tables.sql;
+SOURCE ruta/03_inserts.sql;
+SOURCE ruta/04_queries.sql;
+```
+
+---
+
+## 📸 Capturas de pantalla
+
+A continuación se muestran algunas capturas del proyecto en MySQL Workbench:
+
+### ✔️ Creación de tablas
+
+> *(Agregar aquí captura de la ejecución de `02_tables.sql`)*
+
+### ✔️ Inserción de datos
+
+> *(Agregar aquí captura de `03_inserts.sql` ejecutado correctamente)*
+
+### ✔️ Consultas con JOIN
+
+> *(Agregar aquí captura de consultas con JOIN entre mascotas, dueños e historial clínico)*
+
+---
+
+## 🧪 Ejemplos de consultas
+
+```sql
+SELECT
+  m.nombre AS nombre_mascota,
+  m.especie,
+  CONCAT(d.nombre, ' ', d.apellido) AS dueno
+FROM mascotas m
+INNER JOIN duenos d ON m.id_dueno = d.id;
+```
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+* 🐬 **MySQL**
+* 🧰 **MySQL Workbench**
+* 💻 **SQL**
+
+---
+
+## ✍️ Autor
+
+**Matías Castells**
+Trabajo práctico académico – sin fines comerciales
+
+---
+
+⭐ Si este repositorio te resultó útil, ¡no olvides dejar una estrella!
