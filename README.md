@@ -24,7 +24,7 @@ El objetivo del TP es **diseñar, crear y consultar una base de datos relacional
 │   └── 06_joins.sql          # Consultas con JOIN
 ├── screenshots/              # Capturas de ejecución en phpMyAdmin
 └── README.md
-```md
+```
 
 > ⚠️ **Importante:** todas las tablas fueron creadas dentro de un **único script** (`02_tables.sql`), tal como se solicita en la consigna.
 
@@ -87,7 +87,7 @@ SOURCE ruta/sql/06_joins.sql;
 
 ## 📸 Capturas de pantalla
 
-A continuación se muestran algunas capturas del proyecto en MySQL Workbench:
+A continuación se muestran algunas capturas del proyecto en phpMyAdmin:
 
 ### ✔️ Creación de la base de datos
 
@@ -124,7 +124,7 @@ INNER JOIN duenos d ON m.id_dueno = d.id;
 ## 🛠️ Tecnologías utilizadas
 
 * 🐬 **MySQL**
-* 🧰 **MySQL Workbench**
+* 🧰 **phpMyAdmin / MySQL Workbench**
 * 💻 **SQL**
 
 ---
