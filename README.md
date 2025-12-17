@@ -91,11 +91,12 @@ A continuación se muestran algunas capturas del proyecto en MySQL Workbench:
 
 ### ✔️ Inserción de datos
 
-> *(Agregar aquí captura de `03_inserts.sql` ejecutado correctamente)*
+![Insercíon de datos](./screenshots/inserts.png)
 
 ### ✔️ Consultas con JOIN
 
-> *(Agregar aquí captura de consultas con JOIN entre mascotas, dueños e historial clínico)*
+![Consultas con JOIN](./screenshots/joins1.png)
+![Consultas con JOIN 2](./screenshots/joins2.png)
 
 ---
 
