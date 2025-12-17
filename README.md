@@ -81,9 +81,13 @@ SOURCE ruta/04_queries.sql;
 
 A continuación se muestran algunas capturas del proyecto en MySQL Workbench:
 
+### ✔️ Creación de la base de datos
+
+![Creación de la base de datos](./screenshots/database.png) 
+
 ### ✔️ Creación de tablas
 
-![Creación de la base de datos](./screenshots/database.png)
+![Creación de tablas](./screenshots/tables.png)
 
 ### ✔️ Inserción de datos
 
