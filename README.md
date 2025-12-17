@@ -4,10 +4,10 @@ Proyecto realizado como **trabajo práctico de MySQL** para la materia de **Back
 
 El objetivo del TP es **diseñar, crear y consultar una base de datos relacional** utilizando SQL, aplicando:
 
-* Creación de tablas
-* Claves primarias y foráneas
-* Relaciones entre entidades
-* Consultas con `SELECT`, `JOIN`, `WHERE`, etc.
+- Creación de tablas  
+- Claves primarias y foráneas  
+- Relaciones entre entidades  
+- Consultas con `SELECT`, `JOIN`, `WHERE`, etc.
 
 ---
 
@@ -15,12 +15,16 @@ El objetivo del TP es **diseñar, crear y consultar una base de datos relacional
 
 ```bash
 .
-├── 01_database.sql        # Creación de la base de datos
-├── 02_tables.sql          # Creación de TODAS las tablas (en un único script)
-├── 03_inserts.sql         # Inserción de datos de prueba
-├── 04_queries.sql         # Consultas solicitadas en el TP
+├── sql/
+│   ├── 01_create_db.sql      # Creación de la base de datos
+│   ├── 02_tables.sql         # Creación de TODAS las tablas
+│   ├── 03_inserts.sql        # Inserción de datos de prueba
+│   ├── 04_updates.sql        # Actualización de registros
+│   ├── 05_deletes.sql        # Eliminación de registros
+│   └── 06_joins.sql          # Consultas con JOIN
+├── screenshots/              # Capturas de ejecución en phpMyAdmin
 └── README.md
-```
+```md
 
 > ⚠️ **Importante:** todas las tablas fueron creadas dentro de un **único script** (`02_tables.sql`), tal como se solicita en la consigna.
 
@@ -34,7 +38,6 @@ La base de datos representa el funcionamiento de una veterinaria:
 * 👤 **Dueños**
 * 🩺 **Veterinarios**
 * 📋 **Historial clínico**
-* 📅 **Turnos**
 
 Las tablas están relacionadas mediante **claves foráneas**, respetando la integridad referencial.
 
@@ -52,10 +55,12 @@ Los scripts deben ejecutarse **en orden**, desde MySQL Workbench o la terminal.
 4. Ejecutarlos en el siguiente orden:
 
 ```sql
-01_database.sql
+01_create_db.sql
 02_tables.sql
 03_inserts.sql
-04_queries.sql
+04_updates.sql
+05_deletes.sql
+06_joins.sql
 ```
 
 ---
@@ -69,10 +74,13 @@ mysql -u root -p
 Luego:
 
 ```sql
-SOURCE ruta/01_database.sql;
-SOURCE ruta/02_tables.sql;
-SOURCE ruta/03_inserts.sql;
-SOURCE ruta/04_queries.sql;
+SOURCE ruta/sql/01_create_db.sql;
+SOURCE ruta/sql/02_tables.sql;
+SOURCE ruta/sql/03_inserts.sql;
+SOURCE ruta/sql/04_updates.sql;
+SOURCE ruta/sql/05_deletes.sql;
+SOURCE ruta/sql/06_joins.sql;
+
 ```
 
 ---
@@ -91,7 +99,7 @@ A continuación se muestran algunas capturas del proyecto en MySQL Workbench:
 
 ### ✔️ Inserción de datos
 
-![Insercíon de datos](./screenshots/inserts.png)
+![Inserción de datos](./screenshots/inserts.png)
 
 ### ✔️ Consultas con JOIN
 
