@@ -83,7 +83,7 @@ A continuación se muestran algunas capturas del proyecto en MySQL Workbench:
 
 ### ✔️ Creación de tablas
 
-> *(Agregar aquí captura de la ejecución de `02_tables.sql`)*
+![Creación de la base de datos](./screenshots/database.png)
 
 ### ✔️ Inserción de datos
 
